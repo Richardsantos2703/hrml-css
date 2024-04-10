@@ -34,8 +34,9 @@ header > p > a{
     color: white;
     text-decoration: none;
 }
-article{
+article {
     margin: 20px;
+    text-align: left;
 }
 aside{
     background-color: rgba(0, 0, 0, 0.454);
