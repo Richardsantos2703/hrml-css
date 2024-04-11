@@ -34,21 +34,17 @@ header > p > a{
     color: white;
     text-decoration: none;
 }
-article {
+section {
     margin: 20px;
     text-align: left;
 }
-aside{
-    background-color: rgba(0, 0, 0, 0.454);
-    color: white;
-    padding: 100px;
-    
+section{
     background-position: center center;
 }
-aside#flor{
+section.flor{
     background-image: url(pacote-d012/imagens/background001.jpg);
 }
-aside#folhas{
+section.folhas{
     background-image: url(pacote-d012/imagens/background002.jpg);
 }
 footer{
