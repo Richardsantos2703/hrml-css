@@ -4,20 +4,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 :root{
 
    --font-destaque:'Passion One', cursive;
    --font-conteudo:'Sriracha', cursive;
 }
 
-body{
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
     font-family: var(--font-conteudo);
 }
-*{
-    margin: 0px;
-    padding: 0px;
-}
+
 header{
     background-color: black;
     color: white;
@@ -27,38 +29,51 @@ header{
     padding: 60px;
     margin: 0px;
 }
+header > h1 {
+   padding: 50px;
+   font-variant: small-caps;
+}
 header > p{
     font-size: 20px;
+    padding-bottom: 50px;
 }
-header > p > a{
+a{
     color: white;
     text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
 }
 section {
     margin: 20px;
     text-align: left;
 }
 section{
-    background-position: center center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
-section.flor{
-    background-image: url(pacote-d012/imagens/background001.jpg);
+
+section.normal{
+    background-color: white;
+    color: black;
 }
-section.folhas{
-    background-image: url(pacote-d012/imagens/background002.jpg);
+  section.imagem{ 
+    background-color: rgb(63, 63, 63);
+    color: white;
 }
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 footer{
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;
+    text-align: center;
     padding: 10px;
     margin-top: 15px;
-    text-align: center;
-}
-footer p > a{
-    text-decoration: none;
-    color: white;
-}
-footer a:hover{
-    text-decoration: underline;
 }
