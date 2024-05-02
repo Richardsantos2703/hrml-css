@@ -18,13 +18,17 @@
             padding: 10px;
             background-color: lightgray;
         }
-        td,th{
-            border: 1px solid black;
-
-        }
         thead, tfoot{
             background-color: gray;
             color: white;
+        } td,th{
+            border: 1px solid black;
+        }
+        tbody > tr:nth-child(odd){
+            background: white;
+        }
+        tbody > tr:nth-child(even){
+            background: lightgray;
         }
         td.num{
             text-align: right;
